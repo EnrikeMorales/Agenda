@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Agenda</string>
+    <string name="MainTitle">Contact Manager</string>
+    <string name="TitleAltas">Nuevo Contacto</string>
+    <string name="Altas">Nuevo Contacto</string>
+    <string name="Bajas">Borrar Contacto</string>
+    <string name="Consulta">Buscar</string>
+    <string name="Escribir">Escribe Nombre</string>
+</resources>

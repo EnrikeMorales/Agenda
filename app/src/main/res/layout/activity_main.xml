@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imB_Alta"
+        android:layout_width="65dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="84dp"
+        android:onClick="toActivityAlta"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@mipmap/altas" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="65dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:onClick="toActivityBajas"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imB_Alta"
+        app:srcCompat="@mipmap/bajas" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="65dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:onClick="toActivityBuscar"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:srcCompat="@mipmap/consultas" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="112dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/MainTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tVAltas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="112dp"
+        android:text="@string/Altas"
+        app:layout_constraintStart_toEndOf="@+id/imB_Alta"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tVBajas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/Bajas"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/tVAltas" />
+
+    <TextView
+        android:id="@+id/tVConsulta"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/Consulta"
+        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/tVBajas" />
+</android.support.constraint.ConstraintLayout>
