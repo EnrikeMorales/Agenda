@@ -28,21 +28,15 @@ public class AltasActivity extends AppCompatActivity {
         Name = (EditText)findViewById(R.id.eTNombre);
         Tel = (EditText)findViewById(R.id.eTTelefono);
         Mail = (EditText)findViewById(R.id.eTEmail);
-        //Total = (TextView)findViewById(R.id.tvTotal);
     }
 
     public void AgregarContacto(View view){
-        //String aux = Total.getText().toString();
-        //int tot = Integer.parseInt(aux);
         Contacto temp = new Contacto();
         temp.setNombre(Name.getText().toString());
         temp.setTelefono(Tel.getText().toString());
         temp.setEmail(Mail.getText().toString());
         Contact_aux.add(temp);
         toMainActivity(view);
-        //Contact_aux.addNewItem(temp);
-        //int totalentero = Contact_aux.getSize();
-        //Total.setText(String.valueOf(totalentero));
     }
 
     public void toMainActivity(View view){

@@ -21,12 +21,7 @@ public class MainActivity extends AppCompatActivity {
         temp.setNombre("Luis Morales");
         temp.setTelefono("6861167489");
         temp.setEmail("enrike.mles@hotmail.com");
-        //item.itemList.add(item);
         listaContactos.add(temp);
-        //this.item = new Contacto();
-        //this.item.addNewItem(temp);
-
-        //itemList.add(item);
         //itemList.size();
     }
     @Override
